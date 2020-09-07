@@ -1,6 +1,6 @@
 {
-  "name": "@zhangfuxing/unrar",
-  "version": "0.6.3",
+  "name": "@continuata/unrar",
+  "version": "0.7.0",
   "description": "uncompress rar file",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fuxingZhang/unrar.git"
+    "url": "git+https://github.com/continuata/unrar.git"
   },
   "keywords": [
     "nodejs",
@@ -18,13 +18,13 @@
   "author": "Zhang Fu Xing <502545703@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fuxingZhang/unrar/issues"
+    "url": "https://github.com/continuata/unrar/issues"
   },
-  "homepage": "https://github.com/fuxingZhang/unrar#readme",
+  "homepage": "https://github.com/continuata/unrar#readme",
   "devDependencies": {
     "mocha": "^6.2.2"
   },
   "dependencies": {
-    "unrar-binaries": "^1.0.2"
+    "unrar-binaries": "^1.1.0"
   }
 }
