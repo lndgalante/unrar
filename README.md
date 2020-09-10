@@ -12,7 +12,7 @@ Node.js 12+ required (Because of use Class private fields)
 ## Useage  
 
 ```js
-const unrar = require('@zhangfuxing/unrar');
+const unrar = require('@continuata/unrar');
 const path = require('path');
 const src = path.join(__dirname, './test.rar');
 const dest = __dirname;
@@ -21,7 +21,7 @@ const switches = ['-o+', '-idcd'];
 
 (async () => {
   unrar.on('progress', percent => {
-    console.log(percent);
+    console.log(percent + '%');
   });
 
   await unrar.uncompress({
@@ -53,7 +53,7 @@ export interface Options {
  */
 export function uncompress(options: Options): Promise<'over'>;
 
-export function on(event: "progress", listener: (percent: string) => void): void;
+export function on(event: "progress", listener: (percent: number) => void): void;
 ```
 
 ### Commands
