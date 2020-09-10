@@ -13,7 +13,7 @@ describe('unrar without stream', function () {
 
     try {
       unrar.on('progress', percent => {
-        assert(percent.includes('%'));
+        assert(percent > 0);
       });
 
       const result = await unrar.uncompress({
@@ -43,7 +43,7 @@ describe('unrar without stream', function () {
 
     try {
       unrar.on('progress', percent => {
-        assert(percent.includes('%'));
+        assert(percent > 0);
       });
 
       const result = await unrar.uncompress({
@@ -71,7 +71,7 @@ describe('unrar without stream', function () {
 
     try {
       unrar.on('progress', percent => {
-        assert(percent.includes('%'));
+        assert(percent > 0);
       });
 
       await unrar.uncompress({

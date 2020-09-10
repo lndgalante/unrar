@@ -16,4 +16,4 @@ export interface Options {
  */
 export function uncompress(options: Options): Promise<'over'>;
 
-export function on(event: "progress", listener: (percent: string) => void): void;
+export function on(event: "progress", listener: (percent: number) => void): void;

@@ -42,7 +42,7 @@ class Unrar extends EventEmitter {
       unrar.stdout.on('data', chunk => {
         const data = chunk.toString();
         const match = data.match(reg_progress);
-        if (match !== null) this.emit('progress', match[0]);
+        if (match !== null) this.emit('progress', Number(match[1]));
       });
 
       unrar.on('exit', code => {
@@ -51,7 +51,7 @@ class Unrar extends EventEmitter {
           error.code = code;
           return reject(error);
         }
-        this.emit('progress', '100%');
+        this.emit('progress', 100);
         resolve('over');
       });
     })

@@ -1,6 +1,6 @@
 {
   "name": "@continuata/unrar",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "uncompress rar file",
   "main": "index.js",
   "scripts": {
