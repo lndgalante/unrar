@@ -2,9 +2,14 @@
 const spawn = require('./lib/spawn');
 const EventEmitter = require('events');
 const reg_progress = /([\d]+)%/;
-const reg_password = /^\r\nEnter password \(will not be echoed\)/;
+const reg_password = /\nEnter password \(will not be echoed\)/;
 
 class Unrar extends EventEmitter {
+  unrar;
+  kill() {
+    if (this.unrar) this.unrar.kill();
+  }
+
   /**
    * uncompress .rar file
    * @param {String} src source file path
@@ -28,6 +33,7 @@ class Unrar extends EventEmitter {
           'pipe'
         ]
       });
+      this.unrar = unrar;
 
       unrar.stderr.on('data', chunk => {
         const data = chunk.toString();
