@@ -12,7 +12,7 @@ function setExecutable(path) {
 const binSrcPath = path.join(__dirname, "bin");
 const binDestPath = path.join(appRootDir, "bin");
 const binDestPathMac = path.join(appRootDir, "bin", "darwin");
-const binDestPathWin = path.join(appRootDir, "bin", "win");
+const binDestPathWin = path.join(appRootDir, "bin", "win32");
 
 fs.rename(binSrcPath, binDestPath, () => {
   fs.readdir(binDestPathMac, (err, files) => {
