@@ -1,11 +1,10 @@
 {
   "name": "@continuata/unrar",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "description": "uncompress rar file",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "postinstall": "node moveFiles.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
