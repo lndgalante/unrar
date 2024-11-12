@@ -1,6 +1,6 @@
 {
 	"name": "@lndgalante/unrar",
-	"version": "1.6.2",
+	"version": "1.6.4",
 	"description": "uncompress rar file",
 	"main": "index.js",
 	"scripts": {
@@ -19,9 +19,6 @@
 	"homepage": "https://github.com/lndgalante/unrar#readme",
 	"devDependencies": {
 		"mocha": "^6.2.2"
-	},
-	"dependencies": {
-		"app-root-dir": "^1.0.2"
 	},
 	"directories": {
 		"lib": "lib",
