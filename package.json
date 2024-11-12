@@ -1,30 +1,31 @@
 {
-  "name": "@continuata/unrar",
-  "version": "1.6.1",
-  "description": "uncompress rar file",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/continuata/unrar.git"
-  },
-  "keywords": [
-    "nodejs",
-    "rar",
-    "unrar"
-  ],
-  "author": "Zhang Fu Xing <502545703@qq.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/continuata/unrar/issues"
-  },
-  "homepage": "https://github.com/continuata/unrar#readme",
-  "devDependencies": {
-    "mocha": "^6.2.2"
-  },
-  "dependencies": {
-    "app-root-dir": "^1.0.2"
-  }
+	"name": "@lndgalante/unrar",
+	"version": "1.6.1",
+	"description": "uncompress rar file",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lndgalante/unrar.git"
+	},
+	"keywords": ["nodejs", "rar", "unrar"],
+	"author": "Zhang Fu Xing <502545703@qq.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/lndgalante/unrar/issues"
+	},
+	"homepage": "https://github.com/lndgalante/unrar#readme",
+	"devDependencies": {
+		"mocha": "^6.2.2"
+	},
+	"dependencies": {
+		"app-root-dir": "^1.0.2"
+	},
+	"directories": {
+		"lib": "lib",
+		"test": "test"
+	},
+	"types": "./index.d.ts"
 }
